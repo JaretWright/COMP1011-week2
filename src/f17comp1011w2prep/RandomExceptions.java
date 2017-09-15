@@ -19,7 +19,7 @@ public class RandomExceptions {
         {
             try
             {
-                generateException(random.nextInt(8));
+                generateException(random.nextInt(100));
             }
             catch (Exception e)
             {
@@ -40,7 +40,7 @@ public class RandomExceptions {
         {
             throw new Exception("Long API response");
         }
-        else if (exceptionNum == 2)
+        else if (exceptionNum % 3 == 0)
         {
             throw new Exception("Invalid input");
         }   
